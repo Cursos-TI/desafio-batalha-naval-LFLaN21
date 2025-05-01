@@ -3,18 +3,27 @@
 int main() {
     int tabuleiro[10][10] = {0}; // 0 = água
     
-    // Navio horizontal (3 posições)
-    tabuleiro[2][3] = 3;  // Linha 3, Coluna D
-    tabuleiro[2][4] = 3;  // Linha 3, Coluna E
-    tabuleiro[2][5] = 3;  // Linha 3, Coluna F
+    // Navio horizontal 
+    tabuleiro[1][1] = 3;  // Linha 2, Coluna B
+    tabuleiro[1][2] = 3;  // Linha 2, Coluna C
+    tabuleiro[1][3] = 3;  // Linha 2, Coluna D
     
-    // Navio vertical (4 posições)
-    tabuleiro[5][7] = 3;  // Linha 6, Coluna H
-    tabuleiro[6][7] = 3;  // Linha 7, Coluna H
-    tabuleiro[7][7] = 3;  // Linha 8, Coluna H
-    tabuleiro[8][7] = 3;  // Linha 9, Coluna H
+    // Navio vertical 
+    tabuleiro[3][8] = 3;  // Linha 4, Coluna I
+    tabuleiro[4][8] = 3;  // Linha 5, Coluna I
+    tabuleiro[5][8] = 3;  // Linha 6, Coluna I
+    tabuleiro[6][8] = 3;  // Linha 7, Coluna I
     
-    printf("BATALHA NAVAL\n");
+    // Navio diagonal 1 
+    tabuleiro[7][1] = 3;  // Linha 8, Coluna B
+    tabuleiro[8][2] = 3;  // Linha 9, Coluna C
+    tabuleiro[9][3] = 3;  // Linha 10, Coluna D
+    
+    // Navio diagonal 2 
+    tabuleiro[3][4] = 3;  // Linha 4, Coluna E
+    tabuleiro[4][3] = 3;  // Linha 5, Coluna D
+    tabuleiro[5][2] = 3;  // Linha 6, Coluna C
+    tabuleiro[6][1] = 3;  // Linha 7, Coluna B
     
     // Imprime o tabuleiro
     printf("   A B C D E F G H I J\n");
